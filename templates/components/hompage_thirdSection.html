@@ -1,0 +1,37 @@
+{% load static %}
+<div class="container py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-4 col-sm-8 col-lg-4">
+        <!-- <img src="https://images.ctfassets.net/4pxjo1vaz7xk/MTY4NTAwMjg5MzE2MTM/ac125f245d17c11ef3b6482375f8ee15/Landing-page-hand-app-home-4x5-EN.jpg?w=3840&q=75" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+        <img src="{% static 'images/image3.jpg' %}" class="d-block mx-lg-auto img-fluid loader shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-8">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">Technologies I'm Skilled In</h1>
+        {% include 'components/technologies.html'%}
+    </div>
+    <div class="container px-5  d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="{% url 'projects-page' %}"  type="button" class="btn btn-dark px-5 py-2 me-md-2 rounded-5">Know More</a>
+    </div>
+  </div>
+</div>
+
+  <style>
+ /* HTML: <div class="loader"></div> */
+ .loader {
+    border-radius: 50%;
+    animation: l1 15s infinite linear;
+    filter: grayscale(1);
+  }
+  @keyframes l1 {
+    12.5% {border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%}
+  25%   {border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%}
+  37.5% {border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%}
+  50%   {border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%}
+  62.5% {border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%}
+  75%   {border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%}
+  87.5% {border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%}
+}/* */
+
+/* HTML: <div class="loader"></div> */
+
+  </style>

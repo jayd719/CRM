@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-global COMPANYNAME
 
-COMPANYNAME ='JD|Software Developer'
+
+
 
 
 from pathlib import Path
@@ -139,7 +139,5 @@ RECAPTCHA_PRIVATE_KEY = '6Lch9KEpAAAAANNG_oB_NT8DwFYVRcmRDBQ6Adkh'
 
 X_FRAME_OPTIONS = 'ALLOW-FROM http://jashandeep.co.uk/'
 
-# RECAPTCHA_DEFAULT_ACTION = 'generic'
-# RECAPTCHA_SCORE_THRESHOLD = 0.5
-# RECAPTCHA_LANGUAGE = 'en'
-# RECAPTCHA_FRONTEND_PROXY_HOST = 'https://recaptcha.net'
+LOGIN_REDIRECT_URL = 'home-main'
+LOGIN_URL='login'

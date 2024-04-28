@@ -1,8 +1,16 @@
 {% extends 'main.html' %}
+{% load static%}
 {% block content%}
 
 
 <!-- divider -->
-<h1>hs</h1>
+{% include 'components/header.html'%}
+{% include 'components/section1.html'%}
+
+{% include 'components/section2.html' %}
+
+<div class="he" style="height: 200vh;"></div>
+{% include 'components/emailForm.html' %}
+<script src="{% static 'app.js'%}"></script>
 
 {%endblock%}

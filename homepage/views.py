@@ -9,18 +9,9 @@ class ContactForm(forms.Form):
     captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox)
     
 def landingPage_1(requests):
-    if requests.method == 'POST': 
-        form = ContactForm(requests.POST) 
-        if form.is_valid(): 
-            print
-            return HttpResponse("Yay! you are human.") 
-        else: 
-            return HttpResponse("OOPS! Bot suspected.") 
-            
-    else: 
-        form = ContactForm() 
+   
           
-    return render(requests, 'homepage.html', {'form':form})
+    return render(requests, 'homepage.html')
 
 def projects(requests):
     return render(requests,'projects.html')
